@@ -1,7 +1,7 @@
 'use strict';
 const
   cartButton = document.querySelector("#cart-button"),
-  modal = document.querySelector(".modal"),
+  modal = document.querySelector(".modal-auth"),
   close = document.querySelector(".close"),
   buttonAuth = document.querySelector('.button-auth'),
   modalAuth = document.querySelector('.modal-auth'),
@@ -150,19 +150,25 @@ function openGoods(e) {
   const target = e.target;
 
   const restorant = target.closest('.card-restaurant');
-
-  if (restorant) {
-    cardsMenu.textContent = '';
-    containerPromo.classList.add('hide');
-    restaurants.classList.add('hide');
-    menu.classList.remove('hide');
+  if (login) {
 
 
-    crasteCardGood();
-    crasteCardGood();
-    crasteCardGood();
+    if (restorant) {
+      cardsMenu.textContent = '';
+      containerPromo.classList.add('hide');
+      restaurants.classList.add('hide');
+      menu.classList.remove('hide');
+
+
+      crasteCardGood();
+      crasteCardGood();
+      crasteCardGood();
+
+    }
+
+  }else{
+    toggleModal();
   }
-
 
 }
 
