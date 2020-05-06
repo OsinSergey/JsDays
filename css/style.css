@@ -59,6 +59,12 @@ button {
 
 }
 
+#login , #password {
+    border: 1px solid;
+    border-radius: 2px;
+    outline: #ff7a71;
+ }
+
 .buttons {
     display: flex;
     align-items: center;
