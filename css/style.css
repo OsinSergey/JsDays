@@ -250,6 +250,7 @@ button {
     text-decoration: none;
 
 }
+.card img { height: 300px; object-fit: cover;}
 
 .card-restaurant {
     cursor: pointer
